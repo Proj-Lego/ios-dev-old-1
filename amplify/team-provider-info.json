@@ -1,0 +1,19 @@
+{
+    "lego": {
+        "awscloudformation": {
+            "AuthRoleName": "brick-lego-20190902111849-authRole",
+            "UnauthRoleArn": "arn:aws:iam::009730386103:role/brick-lego-20190902111849-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::009730386103:role/brick-lego-20190902111849-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "brick-lego-20190902111849-deployment",
+            "UnauthRoleName": "brick-lego-20190902111849-unauthRole",
+            "StackName": "brick-lego-20190902111849",
+            "StackId": "arn:aws:cloudformation:us-west-2:009730386103:stack/brick-lego-20190902111849/1c6e3920-cdae-11e9-aa99-066b98e74c72"
+        },
+        "categories": {
+            "auth": {
+                "brickbd1588c8": {}
+            }
+        }
+    }
+}
