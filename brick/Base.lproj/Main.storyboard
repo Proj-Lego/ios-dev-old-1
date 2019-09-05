@@ -97,10 +97,10 @@
             </objects>
             <point key="canvasLocation" x="3220.289855072464" y="-1002.4553571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="sGu-FD-FX8">
             <objects>
-                <viewController id="hdp-FQ-Slx" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signUpVC" id="hdp-FQ-Slx" customClass="SignUpViewController" customModule="brick" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y4b-LW-rQY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -190,6 +190,9 @@
                                 <rect key="frame" x="183" y="587" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitPress:" destination="hdp-FQ-Slx" eventType="touchUpInside" id="BQq-bb-Pg2"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UFR-Ut-nUC">
                                 <rect key="frame" x="220" y="511" width="97" height="30"/>
@@ -217,12 +220,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cB7-VQ-gXP"/>
                     </view>
+                    <connections>
+                        <outlet property="birthdateField" destination="mH3-C7-m9a" id="j5D-pA-bqr"/>
+                        <outlet property="emailField" destination="nIM-vH-hzw" id="fGK-2z-yhW"/>
+                        <outlet property="firstNameField" destination="JyI-ja-l7G" id="9MU-Jc-N5L"/>
+                        <outlet property="lastNameField" destination="max-mq-bX6" id="BNT-3U-o2f"/>
+                        <outlet property="passwordField" destination="UFR-Ut-nUC" id="C4h-iW-sDs"/>
+                        <outlet property="phoneNumField" destination="KUG-Oh-Qkq" id="DI8-JW-v9m"/>
+                        <outlet property="profileField" destination="Bhw-0N-Zzg" id="zPB-ri-znR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J9w-Vv-8lM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
