@@ -18,11 +18,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-//        appSyncClient = appDelegate.appSyncClient
-//        runMutation()
-//        runQuery()
-//        subscribe()
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        //        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        //        appSyncClient = appDelegate.appSyncClient
+        //        runMutation()
+        //        runQuery()
+        //        subscribe()
         AWSMobileClient.sharedInstance().initialize { (userState, error) in
             if let userState = userState {
                 switch(userState){
@@ -31,13 +35,18 @@ class ViewController: UIViewController {
                         self.signInStateLabel.text = "Logged In"
                     }
                 case .signedOut:
-                    AWSMobileClient.sharedInstance().showSignIn(navigationController: self.navigationController!, { (userState, error) in
-                        if(error == nil){       //Successful signin
-                            DispatchQueue.main.async {
-                                self.signInStateLabel.text = "Logged In"
-                            }
-                        }
-                    })
+                    let signInVC = self.storyboard?.instantiateViewController(withIdentifier: "signInNavController") as! UINavigationController
+                    
+                    self.present(signInVC, animated: true, completion: nil)
+                    
+                    
+                    //                    AWSMobileClient.sharedInstance().showSignIn(navigationController: self.navigationController!, { (userState, error) in
+                    //                        if(error == nil){       //Successful signin
+                    //                            DispatchQueue.main.async {
+                    //                                self.signInStateLabel.text = "Logged In"
+                    //                            }
+                    //                        }
+                //                    })
                 default:
                     AWSMobileClient.sharedInstance().signOut()
                 }
@@ -47,7 +56,9 @@ class ViewController: UIViewController {
             }
         }
     }
-
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
