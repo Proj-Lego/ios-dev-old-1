@@ -38,15 +38,6 @@ class ViewController: UIViewController {
                     let signInVC = self.storyboard?.instantiateViewController(withIdentifier: "signInNavController") as! UINavigationController
                     
                     self.present(signInVC, animated: true, completion: nil)
-                    
-                    
-                    //                    AWSMobileClient.sharedInstance().showSignIn(navigationController: self.navigationController!, { (userState, error) in
-                    //                        if(error == nil){       //Successful signin
-                    //                            DispatchQueue.main.async {
-                    //                                self.signInStateLabel.text = "Logged In"
-                    //                            }
-                    //                        }
-                //                    })
                 default:
                     AWSMobileClient.sharedInstance().signOut()
                 }
