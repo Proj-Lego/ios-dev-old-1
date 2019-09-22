@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		215C53A9231D93840073AA71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215C53A8231D93840073AA71 /* AppDelegate.swift */; };
-		215C53AB231D93840073AA71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215C53AA231D93840073AA71 /* ViewController.swift */; };
 		215C53AE231D93840073AA71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 215C53AC231D93840073AA71 /* Main.storyboard */; };
 		215C53B0231D93840073AA71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 215C53AF231D93840073AA71 /* Assets.xcassets */; };
 		215C53B3231D93840073AA71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 215C53B1231D93840073AA71 /* LaunchScreen.storyboard */; };
 		215C53BE231D93840073AA71 /* brickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215C53BD231D93840073AA71 /* brickTests.swift */; };
 		215C53C9231D93840073AA71 /* brickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215C53C8231D93840073AA71 /* brickUITests.swift */; };
-		215C53D9231D98F80073AA71 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215C53D8231D98F80073AA71 /* API.swift */; };
-		216EB8442320F22B0053CE3C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216EB8432320F22B0053CE3C /* SignInViewController.swift */; };
-		216EB8462320F4C70053CE3C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216EB8452320F4C70053CE3C /* SignUpViewController.swift */; };
 		21D308ED231DC55600F95FE7 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 21D308EC231DC55600F95FE7 /* awsconfiguration.json */; };
 		64EB86D73C7DCB35D8CAC1D2 /* Pods_brick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA5F2ACE91AF7805DD499A1 /* Pods_brick.framework */; };
 		855E87287588AC8569DDCA76 /* Pods_brickUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6248BEC36AE74F462CE402DA /* Pods_brickUITests.framework */; };
+		C969AE16232580F800AF8697 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215C53AA231D93840073AA71 /* ViewController.swift */; };
+		C969AE17232580FC00AF8697 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215C53D8231D98F80073AA71 /* API.swift */; };
+		C969AE182325810200AF8697 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215C53A8231D93840073AA71 /* AppDelegate.swift */; };
+		C969AE202325841800AF8697 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C969AE1E2325841800AF8697 /* SignInViewController.swift */; };
+		C969AE212325841800AF8697 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C969AE1F2325841800AF8697 /* SignUpViewController.swift */; };
 		DCF060AF94E042448D8E59BC /* Pods_brickTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47EB6A6072A32D910A7E646D /* Pods_brickTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,10 +54,8 @@
 		215C53C4231D93840073AA71 /* brickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = brickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		215C53C8231D93840073AA71 /* brickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brickUITests.swift; sourceTree = "<group>"; };
 		215C53CA231D93840073AA71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		215C53D8231D98F80073AA71 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = SOURCE_ROOT; };
-		216EB8432320F22B0053CE3C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		216EB8452320F4C70053CE3C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		21D308EC231DC55600F95FE7 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
+		215C53D8231D98F80073AA71 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = brick/Helper/API.swift; sourceTree = SOURCE_ROOT; };
+		21D308EC231DC55600F95FE7 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = awsconfiguration.json; path = brick/config/awsconfiguration.json; sourceTree = SOURCE_ROOT; };
 		3836F0B3FEFF31F3C1FEE856 /* Pods-brick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brick.debug.xcconfig"; path = "Target Support Files/Pods-brick/Pods-brick.debug.xcconfig"; sourceTree = "<group>"; };
 		39BE46C3DCEF424579FBAFF2 /* Pods-brickUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brickUITests.release.xcconfig"; path = "Target Support Files/Pods-brickUITests/Pods-brickUITests.release.xcconfig"; sourceTree = "<group>"; };
 		47EB6A6072A32D910A7E646D /* Pods_brickTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brickTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +64,8 @@
 		8BA5F2ACE91AF7805DD499A1 /* Pods_brick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF31536AA21862CE8454546 /* Pods-brick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brick.release.xcconfig"; path = "Target Support Files/Pods-brick/Pods-brick.release.xcconfig"; sourceTree = "<group>"; };
 		C0C29B896589B3C74CD26261 /* Pods-brickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brickTests.debug.xcconfig"; path = "Target Support Files/Pods-brickTests/Pods-brickTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C969AE1E2325841800AF8697 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		C969AE1F2325841800AF8697 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		C96DBA005B3156E49B915126 /* Pods-brickTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brickTests.release.xcconfig"; path = "Target Support Files/Pods-brickTests/Pods-brickTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,15 +122,15 @@
 		215C53A7231D93840073AA71 /* brick */ = {
 			isa = PBXGroup;
 			children = (
-				215C53D8231D98F80073AA71 /* API.swift */,
-				21D308EC231DC55600F95FE7 /* awsconfiguration.json */,
+				C969AE1123257D5500AF8697 /* config */,
+				C969AE0D23257BF300AF8697 /* Controller */,
+				C969AE0F23257D2E00AF8697 /* View */,
+				C969AE0E23257BF300AF8697 /* Extension */,
+				C969AE0923257BF300AF8697 /* Helper */,
+				C969AE0A23257BF300AF8697 /* Model */,
+				C969AE0B23257BF300AF8697 /* Services */,
 				215C53A8231D93840073AA71 /* AppDelegate.swift */,
-				215C53AA231D93840073AA71 /* ViewController.swift */,
-				216EB8432320F22B0053CE3C /* SignInViewController.swift */,
-				215C53AC231D93840073AA71 /* Main.storyboard */,
-				216EB8452320F4C70053CE3C /* SignUpViewController.swift */,
 				215C53AF231D93840073AA71 /* Assets.xcassets */,
-				215C53B1231D93840073AA71 /* LaunchScreen.storyboard */,
 				215C53B4231D93840073AA71 /* Info.plist */,
 			);
 			path = brick;
@@ -165,6 +165,70 @@
 				39BE46C3DCEF424579FBAFF2 /* Pods-brickUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C969AE0923257BF300AF8697 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				215C53D8231D98F80073AA71 /* API.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C969AE0A23257BF300AF8697 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C969AE0B23257BF300AF8697 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C969AE0D23257BF300AF8697 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				215C53AA231D93840073AA71 /* ViewController.swift */,
+				C969AE1E2325841800AF8697 /* SignInViewController.swift */,
+				C969AE1F2325841800AF8697 /* SignUpViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C969AE0E23257BF300AF8697 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C969AE0F23257D2E00AF8697 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C969AE1023257D2E00AF8697 /* Storyboards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C969AE1023257D2E00AF8697 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				215C53AC231D93840073AA71 /* Main.storyboard */,
+				215C53B1231D93840073AA71 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C969AE1123257D5500AF8697 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				21D308EC231DC55600F95FE7 /* awsconfiguration.json */,
+			);
+			path = config;
 			sourceTree = "<group>";
 		};
 		CA4062A8E94429152E8568BC /* Frameworks */ = {
@@ -424,11 +488,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				216EB8442320F22B0053CE3C /* SignInViewController.swift in Sources */,
-				215C53AB231D93840073AA71 /* ViewController.swift in Sources */,
-				215C53D9231D98F80073AA71 /* API.swift in Sources */,
-				215C53A9231D93840073AA71 /* AppDelegate.swift in Sources */,
-				216EB8462320F4C70053CE3C /* SignUpViewController.swift in Sources */,
+				C969AE202325841800AF8697 /* SignInViewController.swift in Sources */,
+				C969AE182325810200AF8697 /* AppDelegate.swift in Sources */,
+				C969AE17232580FC00AF8697 /* API.swift in Sources */,
+				C969AE16232580F800AF8697 /* ViewController.swift in Sources */,
+				C969AE212325841800AF8697 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
